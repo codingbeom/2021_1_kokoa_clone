@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--link:css 만 입력하면 자동으로 css파일 불러옴-->
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+        <!--To Do : Wifi Icon-->
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <!--Battery Icon-->
+        <i class="fas fa-bolt"></i>
+        <!--Lightning Icon-->
+      </div>
+    </div>
+    <header class="screen-header">
+      <h1 class="screen-header__title">Chats</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i> </span>
+        <span><i class="fas fa-comment-medical fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span
+          ><a href="setting.html"><i class="fas fa-cog fa-lg"></i></a
+        ></span>
+      </div>
+    </header>
+    <main class="friends-screen chats-screen">
+      <a href="chat.html">
+        <div class="user-component">
+          <!--.class명만 작성해서 부모코드와 똑같은 태그의 
+        클래스명이 입혀진 코드 생성 가능-->
+          <div class="user-component__column">
+            <img
+              src="screenshots/profile.jfif"
+              class="user-component__avatar"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Leekibeom</h4>
+              <h6 class="user-component__subtitle">beomho</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">21:22</span>
+            <span class="alret">1</span>
+          </div>
+        </div>
+        <div class="user-component">
+          <!--.class명만 작성해서 부모코드와 똑같은 태그의 
+        클래스명이 입혀진 코드 생성 가능-->
+          <div class="user-component__column">
+            <img
+              src="screenshots/profile.jfif"
+              class="user-component__avatar"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Leekibeom</h4>
+              <h6 class="user-component__subtitle">beomho</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">21:22</span>
+            <span class="alret">1</span>
+          </div>
+        </div>
+      </a>
+    </main>
+    <!--nav>ul>li*4>a 코드를 간단하게 작성 하기 위함-->
+    <!--코드 생성 하자마자 tap키로 유연하게 이동하며 작성가능-->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="far fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__noticication alret">1</span>
+            <i class="fas fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fas fa-search fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="alret-read"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="no-mobile">
+      <span>Your screen is too Big ㅠㅡㅠ</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

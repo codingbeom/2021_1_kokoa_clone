@@ -1,0 +1,33 @@
+.alret {
+  background-color: tomato;
+  /*span은 문자타입으로 인식되어서 픽셀 적용 안됌*/
+  /*그러므로 블록으로 만들어줘야함*/
+  width: 25px;
+  height: 25px;
+  /*블럭 크기의 반만 주면 원이 만들어짐*/
+  border-radius: 12.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+.alret-read {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: tomato;
+  display: flex;
+  position: absolute;
+  left: 33px;
+}
+.alret-read__cog {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: tomato;
+  display: flex;
+  position: absolute;
+  right: 18px;
+  top: 55px;
+}
